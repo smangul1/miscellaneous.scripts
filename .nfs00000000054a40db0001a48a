@@ -30,11 +30,9 @@ do
 echo "$var"
 
 echo "done">${d}/done.txt
-echo "${dirSource}/rclone copy -L -v --stats 30s $d remote:${2}/${d}/">run.transfer.${d}.sh
-
-chmod 755 run.transfer.${d}.sh
-screen -d -m -t $d sh run.transfer.${d}.sh
-
+echo "${dirSource}/rclone copy -L -v --stats 30s $d remote:$2">run.transfer.${d}.sh
+#echo "${dirSource}/gdrive upload -r --parent $2 $d">run.transfer.${d}.sh
+echo "screen -d -m -S $d bash -c '${dirSource}/rclone copy -L -v --stats 30s $d remote:$2'"
 #if [ "$var" -eq 0 ]
 #then
 #echo "var==0"
