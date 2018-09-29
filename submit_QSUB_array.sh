@@ -24,7 +24,7 @@ fi
 
 
 ls run*sh | awk '{i+=1;print "if [ $1 == "i" ];then ./"$1" ;fi"}' > myFunc.sh
-cp /u/home/s/serghei/code/myFuncFastWrapper.sh ./
+cp /u/home/s/serghei/code/miscellaneous.scripts/myFuncFastWrapper.sh ./
 chmod 755 *sh
 n=$(wc -l myFunc.sh | awk '{print $1}')
 qsub -cwd -V -N array -l h_data=${1}G,time=${2}:00:00 -t 1-$n:1 myFuncFastWrapper.sh
