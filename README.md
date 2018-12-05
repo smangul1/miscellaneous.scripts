@@ -1,6 +1,21 @@
 # miscellaneous.scripts
 miscellaneous
 
+# Use screen
+```
+type:
+screen -S name 
+for startinga new screen 
+ctrl + a + d  for detaching the screen, ctrl + d for terminating
+screen -ls 
+screen -X -S SCREENID kill
+
+for the list of screens 
+screen -x {screen number} 
+to re attach 
+```
+
+
 # Set up BOX 
 
 - run on the hoffman2
