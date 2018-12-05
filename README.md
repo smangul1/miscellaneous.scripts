@@ -28,4 +28,13 @@ run screen
 
 ```
 
+# Set up Gdrive
+```
+rclone config
+select Gdrive and validate the link via browser
+```
 
+# run Google Drive
+```
+~/code/miscellaneous.scripts/rclone copy -L -v --stats 30s gdrive:/data/Kinisha.Gala/ ./
+```
