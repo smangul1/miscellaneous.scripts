@@ -53,3 +53,13 @@ select Gdrive and validate the link via browser
 ```
 ~/code/miscellaneous.scripts/rclone copy -L -v --stats 30s gdrive:/data/Kinisha.Gala/ ./
 ```
+
+# Github
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat ~/.ssh/id_rsa.pub
+copy and paste in SSH keys at : https://github.com/settings/keys
+```
+- https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+- https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+
